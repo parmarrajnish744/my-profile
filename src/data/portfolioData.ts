@@ -27,7 +27,7 @@ export const PERSONAL_INFO = {
     whatsapp: "https://wa.me/918238689868",
     email: "mailto:rajnishparmar125@gmail.com",
   },
-  avatarUrl: "/profile.jpg",
+  avatarUrl: process.env.NODE_ENV === "production" ? "/my-profile/profile.jpg" : "/profile.jpg",
   resumeUrl: "#resume",
   typingTitles: [
     "Software Engineer",
